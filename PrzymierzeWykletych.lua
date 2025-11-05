@@ -13,7 +13,18 @@ PrzymierzeWykletych.messages = {
     "Dolacz do gildii <PRZYMIERZE WYKLETYCH> i baw sie razem z nami na MC/BWL/AQ/NAXX!",
     "Szukasz aktywnej gildii? Gildia <PRZYMIERZE WYKLETYCH> ma dla Ciebie miejsce!",
     "Razem z gildia <PRZYMIERZE WYKLETYCH> osiagniemy wiecej – dolacz juz dzis!",
-    "Gildia <PRZYMIERZE WYKLETYCH> zaprasza do wspolnej zabawy i raidow!"
+    "Gildia <PRZYMIERZE WYKLETYCH> zaprasza do wspolnej zabawy i raidow!",
+    "Gilda <PRZYMIERZE WYKLETYCH> zaproszo wszyjstkich gibkich chopow i diolch do wspolnyj zabawy - niy bojcie sie, u nos je wesolo jak na grubie po szychcie!",
+    "Dolonz do gildii <PRZYMIERZE WYKLETYCH> i rajzuj z nami po MC BWL AQ NAXX - trza miec serce, a niy ino EQ!",
+    "Gilda <PRZYMIERZE WYKLETYCH> szuko gryfnych ludzi na epickie przygody - niy musisz byc pro, byleby ci sie chcialo!",
+    "Niy przegap okazji! <PRZYMIERZE WYKLETYCH> bierze nowych bohaterow - po rajdzie moze i na piwo sie skoczy!",
+    "Z nami w <PRZYMIERZE WYKLETYCH> rajdowanie to sam miod i piwo - niy ma stresu, ino szpas i drop!",
+    "Gilda <PRZYMIERZE WYKLETYCH> czeko na Ciebie na kolejnym rajdzie - przyjdz, bo bez Ciebie to jak karminadle bez kapusty!",
+    "Dolonz do naszej brygady <PRZYMIERZE WYKLETYCH> - u nos kazdy cos umia, a razem to my jak familok, ino ze z lootu!",
+    "Szukosz zywyj gildii? W <PRZYMIERZE WYKLETYCH> zawse sie cos dzieje - cy rajd, cy szpas, cy ino godanie na czacie!",
+    "Z gildia <PRZYMIERZE WYKLETYCH> urobimy wiecej niz niejeden bohater z bajki - bo my robimy, niy godo!",
+    "Kaj indziej mozesz i pogro, ale u nos w <PRZYMIERZE WYKLETYCH> je klimat - gryfno banda, dobre rajdy i kupa smiechu!",
+    "Gildia <PRZYMIERZE WYKLETYCH> oferuje nowoczesna operacje zmiany gildii, jesli jeszcze sie niezdecydowalos, przemysl to teraz!"
 }
 
 PrzymierzeWykletych.responsemsg = "Wcale nie 'jedyna', jest tez PRZYMIERZE WYKLETYCH! Zapraszamy!"
@@ -48,6 +59,7 @@ frame:SetScript("OnEvent", function()
     if event == "VARIABLES_LOADED" then
         if initialized then return end
         initialized = true
+        Print("siusiaki")
         Print("Addon aktywny. Co " .. interval .. " sekund powie losowy tekst. (/mow, /mowtime <sekundy>)")
         PrzymierzeWykletych_SayRandom()
     elseif event == "CHAT_MSG_CHANNEL" then
@@ -78,7 +90,7 @@ SlashCmdList["MOW"] = function()
     Print("Powiedziano losowy tekst.")
 end
 
-SLASH_MOW1 = "/mowresptoggle"
+SLASH_MOWRESPTOGGLE1 = "/mowresptoggle"
 SlashCmdList["MOWRESPTOGGLE"] = function()
     responseEnabled = not responseEnabled
     Print("Responder na Zmiane Warty ustawiony na " .. str(responseEnabled) .. " .")

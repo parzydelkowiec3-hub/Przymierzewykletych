@@ -2,6 +2,6 @@
 ## Title: PrzymierzeWykletych
 ## Notes: Autorski addon do kradniecia hasel od ludzi z przymierza wykletych
 ## Author: Anonimus
-## Version: 1.0
+## Version: 1.1
 
 PrzymierzeWykletych.lua
