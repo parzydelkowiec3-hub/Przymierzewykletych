@@ -27,7 +27,7 @@ PrzymierzeWykletych.messages = {
     "Gildia <PRZYMIERZE WYKLETYCH> oferuje nowoczesna operacje zmiany gildii, jesli jeszcze sie niezdecydowalos, przemysl to teraz!"
 }
 
-PrzymierzeWykletych.responsemsg = "Wcale nie 'jedyna', jest tez PRZYMIERZE WYKLETYCH! Zapraszamy!"
+PrzymierzeWykletych.responsemsg = "Wcale nie 'jedyna', jest tez polsko-czeska gildia PRZYMIERZE WYKLETYCH! Ahoj!"
 
 local interval = 900
 local timeSinceLast = 0
